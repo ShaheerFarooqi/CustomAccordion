@@ -1,0 +1,92 @@
+body {
+	background-color: #000;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+/* JS ACCORDION CSS  */
+.about-accordian-outer {
+	overflow: hidden;
+}
+.card {
+	background-color: transparent;
+}
+
+.btn-accordion {
+	background: transparent;
+	border: none;
+	outline: none;
+	position: relative;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	font-weight: 500;
+	color: #ecf4f3;
+	letter-spacing: 1px;
+}
+
+.accordion .card .head {
+	background-color: transparent;
+	padding: 20px;
+	color: #ecf4f3;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.accordion .card .head::after {
+	content: "\002B";
+	transition: transform 0.5s ease-in-out;
+	font-weight: 500;
+}
+
+.accordion .card .head.active::after {
+	content: "\2212";
+	transform: rotate(360deg);
+	transition: 0.5s;
+}
+
+.accordion .card .body {
+	background-color: transparent;
+	font-size: 0.7em;
+	font-weight: 500;
+	display: none;
+	position: relative;
+	transition: 0.5s all ease-in-out;
+}
+
+.accordion .card .body p {
+	padding: 15px 10px;
+	letter-spacing: 1px;
+	text-align: justify;
+}
+
+.accordion .card .head.active + .body {
+	display: block;
+}
+
+.accordion-header button {
+	font-size: 22.66px;
+	color: #fff;
+	font-family: "Brand";
+	text-transform: uppercase;
+}
+
+.accordion-body p {
+	font-size: 17.6px;
+	color: #fff;
+	font-family: "Adega Serif";
+	padding: 1rem 1.25rem;
+	width: 100%;
+	max-width: 90%;
+}
+
+.card {
+	border: none;
+	border-bottom: 1px solid #fff;
+	border-radius: 0;
+}
+
+/* JS ACCORDION CSS  */
